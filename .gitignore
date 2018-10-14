@@ -2,4 +2,8 @@
 node_modules/
 .vs/
 .next/
+.vscode/
+.env.development
+.env.production
+.env
 notes.txt

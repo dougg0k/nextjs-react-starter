@@ -1,15 +1,11 @@
-import "bootstrap/dist/css/bootstrap.css";
-
 import React, { PureComponent } from "react";
 import { Provider } from "mobx-react";
 import { configure } from "mobx";
-
-import { Alert } from "reactstrap";
-import styled from "react-emotion";
+import styled from "styled-components";
 
 import mobxStores from "../stores";
 
-const Button = styled("button")`
+const Button = styled.button`
   background-color: orange;
   color: white;
   border-color: blue;
@@ -22,8 +18,7 @@ class Main extends PureComponent {
     return (
       <Provider {...mobxStores}>
         <div>
-          <Alert color="primary">Bootstrap Test Alert</Alert>
-          <Button>Emotion Testing Button</Button>
+          <Button>Button</Button>
         </div>
       </Provider>
     );
