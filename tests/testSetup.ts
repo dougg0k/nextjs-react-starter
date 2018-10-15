@@ -4,6 +4,7 @@ import Adapter from "enzyme-adapter-react-16";
 
 configure({ adapter: new Adapter() });
 
-global.shallow = shallow;
-global.render = render;
-global.mount = mount;
+const globalAny: any = global;
+globalAny.shallow = shallow;
+globalAny.render = render;
+globalAny.mount = mount;
